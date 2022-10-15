@@ -1,0 +1,27 @@
+DDDDDDDD DFF jose
+SDG 
+DFGDGFFGDG
+DFGDFGGGGDFGDGDFGDFG
+G
+DFG jose
+DFG
+DFGFDGGGGGGG
+
+jose
+
+
+			String textString=	vista.getContenidoFichero().append(Model.mostrarContenidoPrincipal(ruta));
+				
+				Highlighter highlighter = txtContenidoFichero.getHighlighter();
+				String texto =Model.mostrarContenidoPrincipal(getName());
+				txtContenidoFichero.setText(texto);
+			      HighlightPainter painter = new DefaultHighlighter.DefaultHighlightPainter(Color.pink);
+			      int p0 = texto.indexOf("jose" );
+			      int p1 = p0 + "jose".length();
+			      try {
+					highlighter.addHighlight(p0, p1, painter );
+				} catch (BadLocationException e1) {
+					// TODO Auto-generated catch block
+					e1.printStackTrace();
+				}
+				
